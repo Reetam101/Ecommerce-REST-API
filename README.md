@@ -16,6 +16,17 @@ users.
 specific order by its ID.
 - [x] Adding database e.g. MongoDB,
 - [x] Authentication using JWT.
-- [ ] Documentation. 
+- [x] Documentation using swagger. 
 - [x] API rate limiting.
 - [x] caching.
+
+## Built using
+- Node.js and Express
+- MongoDB
+
+### To see documentation
+visit - [swagger doc ui](http://localhost:8000/doc)
+
+### Steps to run locally
+- `npm install`
+- `npm run dev`
