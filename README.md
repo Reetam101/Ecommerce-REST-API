@@ -1,3 +1,5 @@
+## [LIVE LINK](https://ecomm-api-rc.cyclic.app)
+
 ## GOALS
 ### Backend API
 - [x] Category Listing: Create an API endpoint that retrieves a list of categories.
@@ -23,6 +25,10 @@ specific order by its ID.
 ## Built using
 - Node.js and Express
 - MongoDB
+- [cyclic.sh](https://www.cyclic.sh/) for deployment
+
+## HOSTED ON CYCLIC
+### visit - [link](https://ecomm-api-rc.cyclic.app)
 
 ### To see documentation
 visit - [swagger doc ui](http://localhost:8000/doc)
