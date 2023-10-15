@@ -19,7 +19,6 @@ const app = express()
 
 const PORT = process.env.PORT || 5000;
 
-connectDB();
 // addProducts();
 
 const limiter = rateLimit({
@@ -48,10 +47,15 @@ app.use(errorHandler)
 
 // app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 
-mongoose.connection.once('open', () => {
-  console.log('Connected to MongoDB')
-  app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+connectDB().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  })
 })
+// mongoose.connection.once('open', () => {
+//   console.log('Connected to MongoDB')
+//   app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+// })
 
 mongoose.connection.on('error', err => {
   console.log(err)
