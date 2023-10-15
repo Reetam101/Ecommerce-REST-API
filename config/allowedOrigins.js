@@ -1,5 +1,5 @@
 const allowedOrigins = [
-  'http://localhost:3000',
+  "https://pear-enchanting-bandicoot.cyclic.app/",
   '*'
   //your frontend url
 ]
